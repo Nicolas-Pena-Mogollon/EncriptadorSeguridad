@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/menu.css">
+    <link rel="stylesheet" href="../static/css/encrypter.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <title>Nicolás Peña Mogollón</title>
+    <title>Nicolás Peña Mogollón</title>
 </head>
+
 <body>
-    <h1>Bienvenido a mi aplicación Flask</h1>
-    <p>Haz clic <a href="{{ url_for('hello_world') }}">aquí</a> para ver el mensaje "Hello World!"</p>
+    <!-- Menu section  -->
+    <div class="all">
+        <section class="menu">
+            <header class="menu__header">
+                Cifrado Afín
+            </header>
+        </section>
+
+        <!-- Encrypter section -->
+        <section class="encrypter">
+            <div class="encrypter__container">
+                <p class="textinfo">Solo letras minúsculas y sin acentos</p>
+                <textarea class="encrypter__textarea" placeholder="Ingrese el texto aquí" required></textarea>
+                <div class="buttons">
+                    <button onclick="decrypt()" class="decrypt">Descifrar</button>
+                </div>
+            </div>
+            <div class="encrypter__container">
+                <p class="textinfo">Solo letras minúsculas y sin acentos</p>
+                <textarea class="encrypter__textarea" readonly></textarea>
+            </div>
+        </section>
+
+
+        <!-- Contact section -->
+        <section class="contactform" id="contact">
+            Acá va alguna vaina :v
+        </section>
+
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por Nicolás Peña Mogollón</p>
+                <p>2023</p>
+            </div>
+        </section>
+    </div>
+    <!-- Script del documento JavaScript -->
+    <script src="./controllers/index.js" type="module"></script>
 </body>
+
 </html>

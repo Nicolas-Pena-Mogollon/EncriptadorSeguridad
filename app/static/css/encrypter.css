@@ -1,0 +1,53 @@
+.encrypter__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40vw;
+}
+
+.encrypter__textarea {
+    font-size: 1.5em;
+    resize: none;
+    border-radius: 15px;
+    background-color: var(--cor-de-fundo1);
+    padding: 15px;
+    width: 37vw;
+    height: 50vh;
+    overflow: auto;
+}
+
+::placeholder{
+    color:var(--cor-de-fundo2);
+}
+
+:focus{
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    background-color: var(--cor-de-fundo1);
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    width: 39vw;
+    height: 50px;
+}
+
+.buttons button:hover {
+    background-color: #cfdcdc;
+}
+
+.buttons button:active {
+    background-color: var(--cor-de-fundo1);
+    font-size: 18px;
+}
+
+

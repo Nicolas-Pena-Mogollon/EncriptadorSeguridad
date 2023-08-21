@@ -1,0 +1,81 @@
+h2.experience__section__title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--cor-de-texto);
+}
+
+div.experience__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+img.experience__img {
+    width: 70%;
+    margin: 0 20px 10px 0;
+    margin-bottom: 40px;
+}
+
+.experience__box:nth-child(odd) .experience__img {
+    order: 2;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience__title {
+    color: var(--cor-de-texto);
+    font-weight: bold;
+}
+
+.experience__text {
+    color: var(--cor-de-texto);
+}
+
+.experience__description {
+    display: flex;
+    gap: 20px;
+}
+
+button.experience__botao {
+    height: 50px;
+    font-family: 'Raleway';
+    border: 1px solid var(--cor-de-btn);
+}
+
+button.repo {
+    color: var(--cor-de-btn);
+    background-color: var(--cor-de-fundo1);
+}
+
+button.demo {
+    color: var(--cor-de-fundo1);
+    background-color: var(--cor-de-btn);
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    div.experience__box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    img.experience__img {
+        width: 100%;
+        margin: 0 0 0 0;
+        margin-bottom: 10px;
+    }
+
+    .experience__box:nth-child(odd) .experience__img {
+        order: 0;
+    }
+
+    button.experience__botao {
+        width: 35vw;
+    }
+}

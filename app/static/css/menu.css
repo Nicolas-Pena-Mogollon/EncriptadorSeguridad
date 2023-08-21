@@ -1,0 +1,13 @@
+.menu__header {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: "Cinzel Decorative";
+
+}
+
+/*Mobile*/
+@media (max-width: 360px) {
+    .menu__header {
+        font-size: 2.5em;
+    }
+}
