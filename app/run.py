@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-from app.main.routes import bp
+from main.routes import bp
 
 app = Flask(__name__, template_folder='./templates/')
 

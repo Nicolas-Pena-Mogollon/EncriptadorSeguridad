@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, jsonify, request
 
-from app.main.encryptor.encrypt import encrypt
+from main.encryptor.encrypt import encrypt
 
 bp = Blueprint('routes', __name__)
 
