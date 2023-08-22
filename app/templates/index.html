@@ -9,57 +9,81 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/menu.css">
-    <link rel="stylesheet" href="../static/css/encrypter.css">
+    <link rel="stylesheet" href="../static/css/encryption/encrypter.css">
+    <link rel="stylesheet" href="../static/css/encryption/decrypter.css">
+    <link rel="stylesheet" href="../static/css/encryption/encrypter-section.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
-    <title>Nicolás Peña Mogollón</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Nicolás Peña Mogollón</title>
 </head>
 
 <body>
-    <!-- Menu section  -->
-    <div class="all">
-        <section class="menu">
-            <header class="menu__header">
-                Cifrado Afín
-            </header>
-        </section>
+<!-- Menu section  -->
+<div class="all">
+    <section class="menu">
+        <header class="menu__header">
+            Cifrado Afín
+        </header>
+    </section>
 
-        <!-- Encrypter section -->
-        <section class="encrypter">
-            <div class="encrypter__container">
-                <p class="textinfo">Solo letras minúsculas y sin acentos</p>
-                <textarea class="encrypter__textarea" placeholder="Ingrese el texto aquí" required></textarea>
+    <!-- Encrypter section -->
+    <section class="encrypter">
+        <div class="encrypter__container">
+            <p class="textinfo">Ingrese el texto a cifrar o descifrar (solo caracteres de la A a la Z)</p>
+            <form class="inputform__form" name="form">
+                <div class="textarea__container">
+                    <textarea class="encrypter__textarea" placeholder="Ingrese el texto aquí" required
+                              data-tipo="text"></textarea>
+                    <span class="input__message__error">Este campo no es valido</span>
+                </div>
+                <div class="encrypterform__input__container">
+                    <div class="input__container">
+                        <input class="encrypter__input" type="text" name="a-value" placeholder="a" required
+                               pattern="[0-9]+" data-tipo="a">
+                        <label class="encrypter__input__label" for="a-value">a</label>
+                        <span class="input__message__error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input class="encrypter__input" type="text" name="b-value" placeholder="b" required
+                               pattern="[0-9]+" data-tipo="b">
+                        <label class="encrypter__input__label" for="b-value">b</label>
+                        <span class="input__message__error">Este campo no es valido</span>
+                    </div>
+                </div>
                 <div class="buttons">
+                    <button onclick="encrypt(event)" class="encrypt">Cifrar</button>
                     <button onclick="decrypt()" class="decrypt">Descifrar</button>
                 </div>
-            </div>
-            <div class="encrypter__container">
-                <p class="textinfo">Solo letras minúsculas y sin acentos</p>
-                <textarea class="encrypter__textarea" readonly></textarea>
-            </div>
-        </section>
+            </form>
+        </div>
+        <div class="encrypter__container">
+            <p class="textinfo">Solo letras minúsculas y sin acentos</p>
+            <textarea class="encrypter__textarea" readonly></textarea>
+        </div>
+    </section>
 
 
-        <!-- Contact section -->
-        <section class="contactform" id="contact">
-            Acá va alguna vaina :v
-        </section>
+    <!-- Contact section -->
+    <section class="contactform" id="contact">
+        Acá va alguna vaina :v
+    </section>
 
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Nicolás Peña Mogollón</p>
-                <p>2023</p>
-            </div>
-        </section>
-    </div>
-    <!-- Script del documento JavaScript -->
-    <script src="./controllers/index.js" type="module"></script>
+    <!-- Sección de Footer -->
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desarrollado por Nicolás Peña Mogollón</p>
+            <p>2023</p>
+        </div>
+    </section>
+</div>
+<!-- Script del documento JavaScript -->
+<script src="../static/js/index.js" type="module"></script>
+<script src="../static/js/encryptor/encrypt.js"></script>
 </body>
 
 </html>

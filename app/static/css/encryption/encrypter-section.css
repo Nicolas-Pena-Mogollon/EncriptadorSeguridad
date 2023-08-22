@@ -7,15 +7,16 @@
     width: 40vw;
 }
 
-.encrypter__textarea {
-    font-size: 1.5em;
-    resize: none;
-    border-radius: 15px;
-    background-color: var(--cor-de-fundo1);
-    padding: 15px;
-    width: 37vw;
-    height: 50vh;
-    overflow: auto;
+.inputform__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.encrypterform__input__container {
+    position: relative;
+    display: flex;
+    gap: 1vw;
 }
 
 ::placeholder{
@@ -30,6 +31,11 @@
     text-align: center;
 }
 
+.buttons {
+    display: flex;
+    gap: 1vw;
+}
+
 .buttons button {
     background-color: var(--cor-de-fundo1);
     font-family: 'Raleway';
@@ -37,7 +43,7 @@
     display: inline-block;
     border: none;
     border-radius: 15px;
-    width: 39vw;
+    width: 19vw;
     height: 50px;
 }
 
@@ -49,5 +55,4 @@
     background-color: var(--cor-de-fundo1);
     font-size: 18px;
 }
-
 

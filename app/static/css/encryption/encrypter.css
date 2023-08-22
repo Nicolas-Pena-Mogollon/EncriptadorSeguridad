@@ -1,0 +1,93 @@
+.input__container {
+    position: relative;
+}
+
+.encrypter__input {
+    color: var(--cor-de-fundo2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 19vw;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.encrypter__input::placeholder {
+    color: var(--cor-de-fundo2);
+    visibility: hidden;
+}
+
+.encrypter__input:focus {
+    outline: none;
+}
+
+.encrypter__input__label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    color: black;
+    transition: all 0.25s;
+}
+
+.encrypter__input:not(:placeholder-shown)+.encrypter__input__label,
+.encrypter__input:focus+.encrypter__input__label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    color: var(--cor-de-btn);
+    transition: all 0.25s;
+}
+
+.encrypter__input:not(:placeholder-shown).encrypter__input:not(:focus)+.contactform__input__label {
+    color: var(--cor-de-texto);
+}
+
+.input__container__invalid .encrypter__input {
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+.input__container__invalid .encrypter__input__label {
+    color: var(--warning-color);
+}
+
+.input__message__error {
+    display: none;
+}
+
+.input__container__invalid .input__message__error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* text area style*/
+
+.textarea__container {
+    position: relative;
+}
+
+.encrypter__textarea {
+    font-size: 1.5em;
+    resize: none;
+    background-color: var(--cor-de-fundo1);
+    border-radius: 15px;
+    padding: 15px;
+    height: 30vh;
+    width: 37vw;
+    overflow: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.encrypter__textarea:focus {
+    outline: none;
+}
+
+.input__container__invalid .encrypter__textarea {
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
