@@ -1,13 +1,11 @@
-import re
-
-import unicodedata
+from main.tools.tools import remove_accent, clean_text
 
 dictionary = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
 
 def encrypt(values):
-    text = remove_accent(values.get('text').upper())
-    text = clean_text(text)
+    text = clean_text(remove_accent(values.get('text').upper()))
+
     a = int(values.get('a'))
     b = int(values.get('b'))
     ciphertext = ""
@@ -21,13 +19,3 @@ def encrypt(values):
             ciphertext += letter
 
     return ciphertext
-
-
-def remove_accent(text):
-    new_text = ''.join((c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn'))
-    return new_text
-
-
-def clean_text(text):
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
-    return re.sub(r'\s+', ' ', text).strip()

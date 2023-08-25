@@ -2,6 +2,8 @@ from flask import Flask, Blueprint, jsonify, request
 
 from main.encryptor.encrypt import encrypt
 
+from main.encryptor.decrypt import do_json_response
+
 bp = Blueprint('routes', __name__)
 
 
@@ -14,16 +16,12 @@ def encrypt_data():
     else:
         return jsonify("Ha ocurrido un error")
 
-    """
-    data = request.form.get('data')
-    encrypted_data = encrypt(data)
-    return jsonify({'encrypted_data': encrypted_data})"""
 
-
-"""
-@app.route('/decrypt', methods=['POST'])
+@bp.route('/decrypt', methods=['POST'])
 def decrypt_data():
-    encrypted_data = request.form.get('encrypted_data')
-    decrypted_data = decrypt(encrypted_data)
-    return jsonify({'decrypted_data': decrypted_data})
-"""
+    if request.is_json:
+        data = request.json.get('jsonValues')
+        if data is not None:
+            return jsonify(do_json_response(data))
+    else:
+        return jsonify("Ha ocurrido un error")

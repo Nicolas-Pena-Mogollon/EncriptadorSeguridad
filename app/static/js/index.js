@@ -1,16 +1,14 @@
-import { validate } from "./validators/validation.js";
+import {validate} from "./validators/validation.js";
 
 const inputs = document.querySelectorAll("input");
-const textareas = document.querySelectorAll("textarea");
+const textarea = document.querySelector("#input__txtArea");
 
 inputs.forEach((input) => {
-  input.addEventListener("blur", (input) => {
-    validate(input.target);
-  });
+    input.addEventListener("blur", (input) => {
+        validate(input.target);
+    });
 });
 
-textareas.forEach((txta) => {
-  txta.addEventListener("blur", (txta) => {
-    validate(txta.target);
-  });
+textarea.addEventListener("blur", (textarea) => {
+    validate(textarea.target);
 });

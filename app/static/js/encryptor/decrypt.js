@@ -1,23 +1,17 @@
-const inputs = document.querySelectorAll("input");
-const textArea = document.querySelector("#input__txtArea");
-
-function encrypt(e) {
+function decrypt(e) {
     e.preventDefault();
-    if (validateFields(inputs, textArea)) {
+    const textArea = document.querySelector("#input__txtArea");
+    if (validateTextArea(textArea)) {
         const jsonValues = {
-            jsonValues: {
-                text: textArea.value,
-                a: inputs[0].value,
-                b: inputs[1].value
-            }
+            jsonValues: {text: textArea.value}
         };
         $.ajax({
-            url: '/encrypt',
+            url: '/decrypt',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(jsonValues),
             success: function (response) {
-                document.querySelector("#display__txtArea").value = response
+                document.querySelector("#display__txtArea").value = response.text;
                 // Maneja la respuesta JSON del servidor
                 // Puedes acceder a response.encrypted_data para obtener los datos cifrados
             },
@@ -26,15 +20,13 @@ function encrypt(e) {
                 window.alert("Ha ocurrido un error en el servidor");
             }
         });
-        console.log(textArea);
-
-        cleanFields(inputs, textArea);
+        cleanFields();
     }
 }
 
-function validateFields(inputs, textArea) {
+function validateTextArea(textArea) {
     //var valid = true;
-    if (inputs[0].validity.valid && inputs[1].validity.valid && textArea.validity.valid) {
+    if (textArea.validity.valid) {
         textArea.parentElement.classList.remove("input__container__invalid");
         textArea.parentElement.querySelector(".input__message__error").innerHTML = "";
         return true;
@@ -43,11 +35,4 @@ function validateFields(inputs, textArea) {
         textArea.parentElement.querySelector(".input__message__error").innerHTML = "Complete todos los campos";
         return false;
     }
-}
-
-function cleanFields() {
-    inputs.forEach((input) => {
-        input.value = "";
-    });
-    textArea.value = "";
 }
