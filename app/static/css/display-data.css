@@ -1,0 +1,52 @@
+.display__section h3 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.display__section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 30vw;
+}
+
+.span__div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#plot__div {
+    width: 50vw;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1.2vw;
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+
+    .display__section__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #plot__div {
+        width: 88vw;
+    }
+
+    .data__container {
+        gap: 30px;
+        width: 88vw;
+        align-items: center;
+    }
+
+}
