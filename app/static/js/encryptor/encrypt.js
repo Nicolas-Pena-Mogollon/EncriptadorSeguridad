@@ -26,7 +26,6 @@ function encrypt(e) {
                 window.alert("Ha ocurrido un error en el servidor");
             }
         });
-        console.log(textArea);
 
         cleanFields(inputs, textArea);
     }

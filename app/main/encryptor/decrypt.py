@@ -10,7 +10,10 @@ originalFrecuency = ["E", "A", "O"]
 def do_json_response(values):
     text = clean_text(remove_accent(values.get('text').upper()))
     frequencies = frequency_analysis(text)
-    a, b = find_ab(frequencies[0][0], frequencies[1][0], values.get('option'))
+    option = values.get('option')
+    a, b = find_ab(frequencies[0][0], frequencies[1][0], option)
+    if a == -1:
+        return {'text': "No se ha logrado desencriptar"}
     decrypt_text = decrypt(text, a, b)
     return {'text': decrypt_text, 'a': a, 'b': b, 'frequencies': frequencies}
 
@@ -38,28 +41,44 @@ def find_inverse(a):
 
 
 def find_ab(first_letter, second_letter, option):
-    best1 = "E"
-    if option == 1:
+    if option == 0:
+        best1 = "E"
+    elif option == 1:
         best1 = "A"
     elif option == 2:
         best1 = "O"
-
+    else:
+        return -1, -1
     best1_value = dictionary.index(best1)
     first_letter_value = dictionary.index(first_letter)
     second_letter_value = dictionary.index(second_letter)
-
     modulo = 27
-    a = (first_letter_value - second_letter_value) * pow(best1_value, -1, modulo) % modulo
+    if best1_value == 0:
+        a = first_letter_value
+    elif find_inverse(best1_value) is None:
+        return find_ab(first_letter, second_letter, option + 1)
+    else:
+        a = (first_letter_value - second_letter_value) * pow(best1_value, -1, modulo) % modulo
     b = (first_letter_value - a * best1_value) % modulo
 
-    if is_coprime(a) and find_inverse(a) is None:
+    if not is_coprime(a) or find_inverse(a) is None:
         return find_ab(first_letter, second_letter, option + 1)
     return a, b
 
 
 def frequency_analysis(text):
-    counter = Counter(text.replace(" ", "").replace("\n", ""))
-    return counter.most_common(5)
+    cleaned_text = text.replace(" ", "").replace("\n", "")
+    letter_count = Counter(cleaned_text)
+    total_letters = len(cleaned_text)
+    results = []
+
+    for letter, count in letter_count.items():
+        percentage = (count / total_letters) * 100
+        results.append((letter, count, percentage))
+
+    results.sort(key=lambda x: x[1], reverse=True)
+
+    return results[:5]
 
 
 def is_coprime(a):

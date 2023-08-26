@@ -19,24 +19,21 @@
     gap: 1vw;
 }
 
-::placeholder{
-    color:var(--cor-de-fundo2);
+::placeholder {
+    color: var(--cor-de-fundo2);
 }
 
-:focus{
+:focus {
     outline: none;
 }
 
 .buttons {
     text-align: center;
-}
-
-.buttons {
     display: flex;
     gap: 1vw;
 }
 
-.buttons button {
+button {
     background-color: var(--cor-de-fundo1);
     font-family: 'Raleway';
     font-size: 1.2em;
@@ -56,3 +53,32 @@
     font-size: 18px;
 }
 
+/*Mobile*/
+@media (max-width: 700px) {
+    .encrypter__container {
+        width: 88vw;
+    }
+
+    .encrypterform__input__container {
+        width: 88vw;
+        justify-content: space-between;
+    }
+
+    .input__container {
+        width: 38vw;
+    }
+
+    .encrypter__input {
+        width: 36vw;
+    }
+
+    .buttons {
+        justify-content: space-between;
+        width: 86vw;
+    }
+
+    button {
+        width: 35vw;
+
+    }
+}

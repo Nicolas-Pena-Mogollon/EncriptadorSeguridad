@@ -6,7 +6,6 @@
     --cor-de-link: #000;
     --cor-de-btn: #2A7AE4;
     --warning-color: red;
-    --padding-parrafo: 30px;
 }
 
 body {
@@ -25,18 +24,6 @@ a{
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
 /*Sección Menu*/
 
 section.menu{
@@ -54,93 +41,20 @@ section.encrypter{
     color: var(--cor-de-texto1);
 }
 
-/*Sección About*/
+/*Display*/
 
-section.about{
-    background-color: var(--cor-de-fundo2);
-}
-
-/*sección skills*/
-
-section.skills {
-    text-align: center;
-}
-
-/*Sección Hobbies*/
-
-section.hobbies{
-    background-color: var(--cor-de-fundo2);
-    text-align: center;
-}
-
-/* Experiencia Académica*/
-
-section.academic{
-    text-align: center;
-}
-
-/* experiencia*/
-
-section.experience{
+section.display__section{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background-color: var(--cor-de-fundo2);
-}
-
-/*Contacto*/
-
-section.formcontato{
-
-}
-
-/*footeer*/
-
-section.footer{
-   
-}
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+    gap: 30px;
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+@media (max-width: 700px) {
+    section.encrypter{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
 }

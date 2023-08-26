@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/menu.css">
     <link rel="stylesheet" href="../static/css/encryption/encrypter.css">
-    <link rel="stylesheet" href="../static/css/encryption/decrypter.css">
     <link rel="stylesheet" href="../static/css/encryption/encrypter-section.css">
+    <link rel="stylesheet" href="../static/css/display-data.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Nicolás Peña Mogollón</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Cifrado Afín</title>
 </head>
 
 <body>
@@ -37,8 +38,8 @@
             <p class="textinfo">Ingrese el texto a cifrar o descifrar (solo caracteres de la A a la Z)</p>
             <form class="inputform__form" name="form">
                 <div class="textarea__container">
-                    <textarea class="encrypter__textarea" id="input__txtArea" placeholder="Ingrese el texto aquí" required
-                              data-tipo="text"></textarea>
+                        <textarea class="encrypter__textarea" id="input__txtArea" placeholder="Ingrese el texto aquí"
+                                  required data-tipo="text"></textarea>
                     <span class="input__message__error">Este campo no es valido</span>
                 </div>
                 <div class="encrypterform__input__container">
@@ -64,13 +65,24 @@
         <div class="encrypter__container">
             <p class="textinfo">Texto cifrado/Descifrado</p>
             <textarea class="encrypter__textarea" id="display__txtArea" readonly></textarea>
+            <button onclick="reDecrypt(event)" class="decrypt">Descifrar</button>
         </div>
     </section>
 
 
-    <!-- Contact section -->
-    <section class="contactform" id="contact">
-        Acá va alguna vaina :v
+    <!-- Display section -->
+    <section class="display__section">
+        <h3>Resultados de desencriptado</h3>
+        <div class="display__section__container">
+            <div class="data__container" id="data__container">
+                <div class="span__div">
+                    <span id="first__value"></span>
+                    <span id="second__value"></span>
+                </div>
+                <div class="table__div" id="table1"></div>
+            </div>
+            <div id="plot__div"></div>
+        </div>
     </section>
 
     <!-- Sección de Footer -->
@@ -84,8 +96,8 @@
 <!-- Script del documento JavaScript -->
 <script src="../static/js/index.js" type="module"></script>
 <script src="../static/js/encryptor/encrypt.js"></script>
+<script src="../static/js/encryptor/plot.js"></script>
 <script src="../static/js/encryptor/decrypt.js"></script>
-
 </body>
 
 </html>

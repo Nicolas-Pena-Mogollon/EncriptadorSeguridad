@@ -12,3 +12,7 @@ inputs.forEach((input) => {
 textarea.addEventListener("blur", (textarea) => {
     validate(textarea.target);
 });
+
+
+document.cookie = "text=";
+document.cookie = "option=";
