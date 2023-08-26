@@ -6,7 +6,7 @@ function decrypt(e) {
         document.cookie = "text=" + text;
         document.cookie = "option=0"
         const jsonValues = {
-            jsonValues: { text: text, option: 0 }
+            jsonValues: {text: text, option: 0}
         };
 
         $.ajax({
@@ -55,14 +55,18 @@ function reDecrypt(e) {
 
     var text = getCookie("text");
     var option = parseInt(getCookie("option")) + 1;
+
     if (option > 2) {
         alert("No se ha logrado desencriptar el texto")
+        return;
+    } else if (text === "") {
+        alert("Descifre primero un mensaje");
         return;
     }
     document.cookie = "option=" + option;
 
     const jsonValues = {
-        jsonValues: { text: text, option: option }
+        jsonValues: {text: text, option: option}
     };
 
     $.ajax({

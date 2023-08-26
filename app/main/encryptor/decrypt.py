@@ -10,6 +10,8 @@ originalFrecuency = ["E", "A", "O"]
 def do_json_response(values):
     text = clean_text(remove_accent(values.get('text').upper()))
     frequencies = frequency_analysis(text)
+    if frequencies is None:
+        return {'text': "Ingrese solo caracteres de la A a la Z"}
     option = values.get('option')
     a, b = find_ab(frequencies[0][0], frequencies[1][0], option)
     if a == -1:
@@ -68,6 +70,8 @@ def find_ab(first_letter, second_letter, option):
 
 def frequency_analysis(text):
     cleaned_text = text.replace(" ", "").replace("\n", "")
+    if cleaned_text == "":
+        return None
     letter_count = Counter(cleaned_text)
     total_letters = len(cleaned_text)
     results = []
