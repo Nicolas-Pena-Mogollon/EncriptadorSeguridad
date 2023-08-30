@@ -56,12 +56,13 @@ def find_ab(first_letter, second_letter, option):
     second_letter_value = dictionary.index(second_letter)
     modulo = 27
     if best1_value == 0:
-        a = first_letter_value
+        b = first_letter_value
+        a = (second_letter_value - b) * find_inverse(dictionary.index("E")) % 27
     elif find_inverse(best1_value) is None:
         return find_ab(first_letter, second_letter, option + 1)
     else:
         a = (first_letter_value - second_letter_value) * pow(best1_value, -1, modulo) % modulo
-    b = (first_letter_value - a * best1_value) % modulo
+        b = (first_letter_value - a * best1_value) % modulo
 
     if not is_coprime(a) or find_inverse(a) is None:
         return find_ab(first_letter, second_letter, option + 1)

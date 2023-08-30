@@ -38,7 +38,6 @@ function decrypt(e) {
 }
 
 function validateTextArea(textArea) {
-    //var valid = true;
     if (textArea.validity.valid) {
         textArea.parentElement.classList.remove("input__container__invalid");
         textArea.parentElement.querySelector(".input__message__error").innerHTML = "";
