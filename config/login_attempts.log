@@ -1,0 +1,210 @@
+2023-10-29 23:43:25,546 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-29 23:43:25,547 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-29 23:46:11,748 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:11] "GET / HTTP/1.1" 200 -
+2023-10-29 23:46:12,188 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:12] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-29 23:46:12,240 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-29 23:46:12,244 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:12] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-29 23:46:12,260 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:12] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-29 23:46:12,371 - INFO - 127.0.0.1 - - [29/Oct/2023 23:46:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-10-29 23:53:32,668 - INFO - 127.0.0.1 - - [29/Oct/2023 23:53:32] "GET /encrypter HTTP/1.1" 200 -
+2023-10-30 00:19:05,499 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:05] "GET / HTTP/1.1" 200 -
+2023-10-30 00:19:05,528 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:05] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:19:05,535 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:19:05,545 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:05] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:19:05,549 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:05] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:19:13,742 - INFO - 127.0.0.1 - - [30/Oct/2023 00:19:13] "GET /encrypter HTTP/1.1" 200 -
+2023-10-30 00:49:25,555 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:25] "GET / HTTP/1.1" 200 -
+2023-10-30 00:49:25,577 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:25] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:25,583 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:25,596 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:25] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:25,601 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:25] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,006 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:49:36,048 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "GET / HTTP/1.1" 200 -
+2023-10-30 00:49:36,068 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,075 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,092 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/encryptor/encryption/encrypter.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,094 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/encryptor/menu.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,107 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/encryptor/encryption/encrypter-section.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,121 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/encryptor/footer.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,122 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/css/encryptor/display-data.css HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,132 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/js/encryptor/index.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,151 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/js/encryptor/encrypt.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,164 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/js/encryptor/plot.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,171 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/js/encryptor/decrypt.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:36,449 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:36] "[36mGET /static/js/encryptor/validators/validation.js HTTP/1.1[0m" 304 -
+2023-10-30 00:49:44,645 - INFO - 127.0.0.1 - - [30/Oct/2023 00:49:44] "POST /encrypt HTTP/1.1" 200 -
+2023-10-30 00:50:36,603 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:36] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:50:36,639 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:36,640 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:36] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:36,648 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:36] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:36,655 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:36] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,349 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:50:44,396 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "GET / HTTP/1.1" 200 -
+2023-10-30 00:50:44,420 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,441 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,453 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/encryptor/menu.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,463 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/encryptor/encryption/encrypter.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,467 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/encryptor/encryption/encrypter-section.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,470 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/encryptor/display-data.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,484 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/css/encryptor/footer.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,487 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/js/encryptor/index.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,492 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/js/encryptor/encrypt.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,496 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/js/encryptor/plot.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,507 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/js/encryptor/decrypt.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:44,772 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:44] "[36mGET /static/js/encryptor/validators/validation.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:48,195 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:48] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:50:48,223 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:48] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:48,224 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:48,234 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:48] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:50:48,237 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:48] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:57,251 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:57] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:57,260 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:57] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:50:57,261 - INFO - 127.0.0.1 - - [30/Oct/2023 00:50:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:51:02,204 - ERROR - Intento de inicio de sesión fallido - Usuario: aassssssss, Hora: 2023-10-30 00:51:02.203179
+2023-10-30 00:51:02,205 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:02] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:51:05,060 - ERROR - Intento de inicio de sesión fallido - Usuario: assssssss, Hora: 2023-10-30 00:51:05.060386
+2023-10-30 00:51:05,061 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:05] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:51:13,878 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:13] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:51:16,459 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:16] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:51:16,489 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:16] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:51:16,499 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:51:16,505 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:16] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:51:16,508 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:16] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:51:20,061 - ERROR - Intento de inicio de sesión fallido - Usuario: aaaaaaaaaa, Hora: 2023-10-30 00:51:20.061468
+2023-10-30 00:51:20,062 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:20] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:51:23,800 - ERROR - Intento de inicio de sesión fallido - Usuario: aaaaaaaaaa, Hora: 2023-10-30 00:51:23.800733
+2023-10-30 00:51:23,801 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:23] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:51:28,105 - INFO - 127.0.0.1 - - [30/Oct/2023 00:51:28] "POST /login HTTP/1.1" 200 -
+2023-10-30 00:56:09,602 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 00:56:09,602 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 00:56:13,101 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:13] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:56:13,558 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:13] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:13,562 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:13,574 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:13] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:13,577 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:13] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 00:56:22,216 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:22] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:56:22,244 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:22] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:22,249 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:22,260 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:22] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:56:22,262 - INFO - 127.0.0.1 - - [30/Oct/2023 00:56:22] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:57:36,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 00:57:36,880 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 00:57:38,822 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:38] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:57:39,248 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:39,252 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:39] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:39,273 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:39] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 00:57:39,277 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:39] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:45,031 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:45] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:57:45,053 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:45] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:45,061 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:45,069 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:45] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:57:45,073 - INFO - 127.0.0.1 - - [30/Oct/2023 00:57:45] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:58:20,765 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 00:58:20,765 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 00:58:22,566 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:22] "GET /index HTTP/1.1" 200 -
+2023-10-30 00:58:22,968 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:22] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:23,001 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:23,051 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:23] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 00:58:23,054 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:23] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:26,495 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:26] "GET / HTTP/1.1" 200 -
+2023-10-30 00:58:26,546 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:26,552 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:26] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:26,558 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:26] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:26,565 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:26] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:58:32,280 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:32] "GET / HTTP/1.1" 200 -
+2023-10-30 00:58:32,303 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:32] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:32,309 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:32,318 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:32] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:32,320 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:32] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:58:52,154 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:52] "GET / HTTP/1.1" 200 -
+2023-10-30 00:58:52,183 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:52] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:52,184 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:52,190 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:52] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 00:58:52,194 - INFO - 127.0.0.1 - - [30/Oct/2023 00:58:52] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 00:59:00,068 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 00:59:00,069 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 00:59:00,573 - INFO - 127.0.0.1 - - [30/Oct/2023 00:59:00] "GET / HTTP/1.1" 200 -
+2023-10-30 00:59:01,057 - INFO - 127.0.0.1 - - [30/Oct/2023 00:59:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 00:59:01,160 - INFO - 127.0.0.1 - - [30/Oct/2023 00:59:01] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 00:59:01,227 - INFO - 127.0.0.1 - - [30/Oct/2023 00:59:01] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 00:59:01,232 - INFO - 127.0.0.1 - - [30/Oct/2023 00:59:01] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:01:15,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 01:01:15,387 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 01:01:17,903 - INFO - 127.0.0.1 - - [30/Oct/2023 01:01:17] "GET / HTTP/1.1" 200 -
+2023-10-30 01:01:18,361 - INFO - 127.0.0.1 - - [30/Oct/2023 01:01:18] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 01:01:18,430 - INFO - 127.0.0.1 - - [30/Oct/2023 01:01:18] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:01:18,443 - INFO - 127.0.0.1 - - [30/Oct/2023 01:01:18] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:01:18,446 - INFO - 127.0.0.1 - - [30/Oct/2023 01:01:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:20,191 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 01:02:20,191 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 01:02:21,033 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:21] "GET / HTTP/1.1" 200 -
+2023-10-30 01:02:21,405 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:21] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:21,422 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:21,430 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:21] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 01:02:21,434 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:21] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:22,903 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:22] "GET / HTTP/1.1" 200 -
+2023-10-30 01:02:22,926 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:22] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:22,937 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:22,938 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:22] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:02:22,941 - INFO - 127.0.0.1 - - [30/Oct/2023 01:02:22] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+2023-10-30 01:10:59,590 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 01:10:59,590 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 01:12:45,826 - INFO - 127.0.0.1 - - [30/Oct/2023 01:12:45] "GET / HTTP/1.1" 200 -
+2023-10-30 01:12:46,249 - INFO - 127.0.0.1 - - [30/Oct/2023 01:12:46] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 01:12:46,269 - INFO - 127.0.0.1 - - [30/Oct/2023 01:12:46] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:12:46,287 - INFO - 127.0.0.1 - - [30/Oct/2023 01:12:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:12:46,288 - INFO - 127.0.0.1 - - [30/Oct/2023 01:12:46] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:03,559 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 01:15:03,560 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 01:15:06,261 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:06] "GET / HTTP/1.1" 200 -
+2023-10-30 01:15:06,663 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:06,666 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:06] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:06,687 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:06] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 01:15:06,690 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:06] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:36,491 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.34:80
+2023-10-30 01:15:36,491 - INFO - [33mPress CTRL+C to quit[0m
+2023-10-30 01:15:38,296 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:38] "GET / HTTP/1.1" 200 -
+2023-10-30 01:15:38,715 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:38] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:38,740 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:38,759 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:38] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:15:38,764 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:38] "GET /static/js/login.js HTTP/1.1" 200 -
+2023-10-30 01:15:42,080 - ERROR - Intento de inicio de sesión fallido - Usuario: aaaaaaaaaaaaaaaaaa, Hora: 2023-10-30 01:15:42.080734
+2023-10-30 01:15:42,081 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:42] "POST /login HTTP/1.1" 200 -
+2023-10-30 01:15:46,413 - ERROR - Intento de inicio de sesión fallido - Usuario: aaaaaaaaaaaaaaaaaaa, Hora: 2023-10-30 01:15:46.413955
+2023-10-30 01:15:46,415 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:46] "POST /login HTTP/1.1" 200 -
+2023-10-30 01:15:49,591 - INFO - 127.0.0.1 - - [30/Oct/2023 01:15:49] "POST /login HTTP/1.1" 200 -
+2023-10-30 01:16:00,604 - INFO - 127.0.0.1 - - [30/Oct/2023 01:16:00] "GET / HTTP/1.1" 200 -
+2023-10-30 01:16:00,628 - INFO - 127.0.0.1 - - [30/Oct/2023 01:16:00] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
+2023-10-30 01:16:00,637 - INFO - 127.0.0.1 - - [30/Oct/2023 01:16:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-10-30 01:16:00,642 - INFO - 127.0.0.1 - - [30/Oct/2023 01:16:00] "[36mGET /static/css/index/index.css HTTP/1.1[0m" 304 -
+2023-10-30 01:16:00,644 - INFO - 127.0.0.1 - - [30/Oct/2023 01:16:00] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -

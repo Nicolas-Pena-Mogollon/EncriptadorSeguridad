@@ -5,100 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Style sheets -->
-    <link rel="icon" href="data:image/x-icon;,">
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/menu.css">
-    <link rel="stylesheet" href="../static/css/encryption/encrypter.css">
-    <link rel="stylesheet" href="../static/css/encryption/encrypter-section.css">
-    <link rel="stylesheet" href="../static/css/display-data.css">
-    <link rel="stylesheet" href="../static/css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonts -->
+    <link rel="stylesheet" href="../static/css/index/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <title>Cifrado Afín</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
-<!-- Menu section  -->
-<div class="all">
-    <section class="menu">
-        <header class="menu__header">
-            Cifrado Afín
-        </header>
-    </section>
-
-    <!-- Encrypter section -->
-    <section class="encrypter">
-        <div class="encrypter__container">
-            <p class="textinfo">Ingrese el texto a cifrar o descifrar (solo caracteres de la A a la Z)</p>
-            <form class="inputform__form" name="form">
-                <div class="textarea__container">
-                        <textarea class="encrypter__textarea" id="input__txtArea" placeholder="Ingrese el texto aquí"
-                                  required data-tipo="text"></textarea>
-                    <span class="input__message__error">Este campo no es valido</span>
+    <section class="login">
+        <div class="container">
+            <h2>Iniciar Sesión</h2>
+            <form class="login__form" id="login__form">
+                <div class="form__group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required pattern=".{8,}">
                 </div>
-                <div class="encrypterform__input__container">
-                    <div class="input__container">
-                        <input class="encrypter__input" type="text" name="a-value" placeholder="a" required
-                               pattern="[0-9]+" data-tipo="a">
-                        <label class="encrypter__input__label" for="a-value">a</label>
-                        <span class="input__message__error">Este campo no es valido</span>
-                    </div>
-                    <div class="input__container">
-                        <input class="encrypter__input" type="text" name="b-value" placeholder="b" required
-                               pattern="[0-9]+" data-tipo="b">
-                        <label class="encrypter__input__label" for="b-value">b</label>
-                        <span class="input__message__error">Este campo no es valido</span>
-                    </div>
+                <div class="form__group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required pattern=".{8,}">
                 </div>
-                <div class="buttons">
-                    <button onclick="encrypt(event)" class="encrypt">Cifrar</button>
-                    <button onclick="decrypt(event)" class="decrypt">Descifrar</button>
-                </div>
+                <button id="submit__buton" type="button">Iniciar Sesión</button>
             </form>
-        </div>
-        <div class="encrypter__container">
-            <p class="textinfo">Texto cifrado/Descifrado</p>
-            <textarea class="encrypter__textarea" id="display__txtArea" readonly></textarea>
-            <button onclick="reDecrypt(event)" class="decrypt">Intentar nuevamente</button>
+            <p id="error-message" class="error-message"></p>
         </div>
     </section>
-
-
-    <!-- Display section -->
-    <section class="display__section">
-        <h3>Resultados de desencriptado</h3>
-        <div class="display__section__container">
-            <div class="data__container" id="data__container">
-                <div class="span__div">
-                    <span id="first__value"></span>
-                    <span id="second__value"></span>
-                </div>
-                <div class="table__div" id="table1"></div>
-            </div>
-            <div id="plot__div"></div>
-        </div>
-    </section>
-
-    <!-- Sección de Footer -->
-    <section class="footer">
-        <div class="footer__rodape">
-            <p>Desarrollado por Nicolás Peña Mogollón</p>
-            <p>2023</p>
-        </div>
-    </section>
-</div>
-<!-- Script del documento JavaScript -->
-<script src="../static/js/index.js" type="module"></script>
-<script src="../static/js/encryptor/encrypt.js"></script>
-<script src="../static/js/encryptor/plot.js"></script>
-<script src="../static/js/encryptor/decrypt.js"></script>
+    <script src="../static/js/login.js"></script>
 </body>
 
 </html>

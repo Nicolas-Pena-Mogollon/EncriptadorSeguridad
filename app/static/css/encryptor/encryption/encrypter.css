@@ -92,6 +92,27 @@
     border-radius: 7px;
 }
 
+button {
+    cursor: pointer;
+    background-color: var(--cor-de-fundo1);
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    width: 19vw;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #cfdcdc;
+}
+
+button:active {
+    background-color: var(--cor-de-fundo1);
+    font-size: 18px;
+}
+
 /*Mobile*/
 @media (max-width: 700px) {
     .encrypter__textarea{

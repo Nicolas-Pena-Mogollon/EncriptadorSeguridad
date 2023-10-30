@@ -1,3 +1,7 @@
+section {
+    padding: 4vw 5vw 4vw 5vw;
+}
+
 .encrypter__container {
     display: flex;
     flex-direction: column;
@@ -23,34 +27,10 @@
     color: var(--cor-de-fundo2);
 }
 
-:focus {
-    outline: none;
-}
-
 .buttons {
     text-align: center;
     display: flex;
     gap: 1vw;
-}
-
-button {
-    background-color: var(--cor-de-fundo1);
-    font-family: 'Raleway';
-    font-size: 1.2em;
-    display: inline-block;
-    border: none;
-    border-radius: 15px;
-    width: 19vw;
-    height: 50px;
-}
-
-.buttons button:hover {
-    background-color: #cfdcdc;
-}
-
-.buttons button:active {
-    background-color: var(--cor-de-fundo1);
-    font-size: 18px;
 }
 
 /*Mobile*/

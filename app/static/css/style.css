@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-de-fundo1: white;
     --cor-de-fundo2: #1f1f1f;
     --cor-de-texto1: white;
@@ -15,35 +15,53 @@ body {
     line-height: 1;
 }
 
-section {
-    padding: 4vw 5vw 4vw 5vw;
-}
-
-a{
+a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
-/*Sección Menu*/
+:focus {
+    outline: none;
+}
 
-section.menu{
+section.logout {
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+section.logout button {
+    cursor: pointer;
+    background-color: var(--cor-de-fundo2);
+    color: var(--cor-de-texto1);
+    font-size: 1.2em;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+}
+
+/*Sección Menu*/
+section.menu {
     text-align: center;
-    background-color: var(--cor-de-fundo1) ;
+    background-color: var(--cor-de-fundo1);
 }
 
 /*Sección Title*/
-
-section.encrypter{
+section.encrypter {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    background-color: var(--cor-de-fundo2) ;
+    background-color: var(--cor-de-fundo2);
     color: var(--cor-de-texto1);
 }
 
 /*Display*/
 
-section.display__section{
+section.display__section {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -52,7 +70,7 @@ section.display__section{
 
 /*Mobile*/
 @media (max-width: 700px) {
-    section.encrypter{
+    section.encrypter {
         flex-direction: column;
         align-items: start;
         gap: 20px;
