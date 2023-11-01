@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request, session, redirect, url_for, render_template
 from datetime import datetime
 from functools import wraps
-import logging
+#import logging
 import json
 import bcrypt
 import jwt
@@ -14,8 +14,8 @@ db = Database().db
 bp = Blueprint('routes', __name__)
 
 
-logging.basicConfig(filename='./config/login_attempts.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+#logging.basicConfig(filename='./config/login_attempts.log', level=logging.INFO,
+                    #format='%(asctime)s - %(levelname)s - %(message)s')
 with open('./config/config.json') as config_file:
     config = json.load(config_file)
 
@@ -114,8 +114,8 @@ def login():
                 minutes, seconds = divmod((blocked_users[username]['block_until'] - datetime.now()).total_seconds(), 60)
                 return jsonify({'blocked': [int(minutes), int(seconds)]})
             # Registra el intento de inicio de sesión incorrecto
-            log_message = f"Intento de inicio de sesión fallido - Usuario: {username}, Hora: {datetime.now()}"
-            logging.error(log_message)
+            #log_message = f"Intento de inicio de sesión fallido - Usuario: {username}, Hora: {datetime.now()}"
+            #logging.error(log_message)
             return jsonify({'error': 'Credenciales inválidas'})
 
     return jsonify({'error': 'Invalid request'}), 400
