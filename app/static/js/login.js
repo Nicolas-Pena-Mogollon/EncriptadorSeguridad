@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log(document.cookie)
     if (cookieExists("blocked") && new Date(getCookie("blocked")) < new Date()) {
         document.cookie = "blocked=" + new Date();
     }

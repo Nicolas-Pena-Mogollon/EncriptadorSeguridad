@@ -17,7 +17,6 @@ function encrypt(e) {
             contentType: 'application/json',
             data: JSON.stringify(jsonValues),
             success: function (response) {
-                console.log(response)
                 document.querySelector("#display__txtArea").value = response
                 // Maneja la respuesta JSON del servidor
                 // Puedes acceder a response.encrypted_data para obtener los datos cifrados
